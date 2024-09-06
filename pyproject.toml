@@ -1,0 +1,22 @@
+[build-system]
+# A list of packages that are needed to build your package:
+requires = ["setuptools"]  # REQUIRED if [build-system] table is used
+# The name of the Python object that frontends will use to perform the build:
+build-backend = "setuptools.build_meta"  # If not defined, then legacy behavior can happen.
+
+[project]
+name = "oracledb_toolkit"
+version = "0.0.1"
+description = "Python toolkit to connect to Oracle databases using the oracledb package"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+]
+
+authors = [
+    {name = "Roel Christian Yambao", email = "roelchristian.yambao@gmail.com"}
+]
