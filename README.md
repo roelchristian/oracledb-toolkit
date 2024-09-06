@@ -17,7 +17,7 @@ ORACLE_CLIENT_PATH=your_oracle_client_path
 
 The `ORACLE_CLIENT_PATH` is the path to the Oracle Instant Client directory. You can download the Oracle Instant Client from the [Oracle website](https://www.oracle.com/database/technologies/instant-client.html).
 
-2. Create a virtual environment, activate it and install the required packages (found in the `requirements.txt` file in the root directory of the project):
+2. (Optional) Create a virtual environment, activate it and install the required packages (found in the `requirements.txt` file in the root directory of the project):
 
 ```bash
 python -m venv venv
@@ -26,4 +26,14 @@ cd venv
 pip install -r requirements.txt
 ```
 
-3. See the `samplequery.py` file for an example of how to use the toolkit.
+3. Build and install the package:
+
+```bash
+python -m build
+pip install -e .
+```
+
+## Usage
+
+
+See the `example.py` file for an example of how to use the toolkit.
