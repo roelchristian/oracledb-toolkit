@@ -1,5 +1,5 @@
 import oracledb
-from src import logger, config
+from oracledb_toolkit import logger
 import pandas as pd
 
 class OracleConnection():
@@ -7,7 +7,7 @@ class OracleConnection():
     def __init__(self, config):
         self.config = config
         # TODO: Hide the password if printing the config
-        self.logger = logger.setup_logging("OracleConnection")
+        self.logger = logger.setup_logging(__name__)
 
     def connect_to_db(self) -> oracledb.Connection:
         """

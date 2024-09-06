@@ -4,7 +4,8 @@ import logging
 import sys
 import datetime as dt
 import os
-from src import config
+
+from oracledb_toolkit import config
 
 def setup_logging(logger_name: str) -> logging.Logger:
 
