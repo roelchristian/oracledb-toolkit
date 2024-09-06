@@ -4,8 +4,7 @@ import logging
 import sys
 import datetime as dt
 import os
-
-from src.utils import config
+from src import config
 
 def setup_logging(logger_name: str) -> logging.Logger:
 
