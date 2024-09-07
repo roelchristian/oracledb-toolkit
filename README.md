@@ -29,6 +29,7 @@ pip install -r requirements.txt
 3. Build and install the package:
 
 ```bash
+python -m pip install --upgrade build
 python -m build
 pip install -e .
 ```
